@@ -3,6 +3,8 @@ from games import games
 
 app = Flask(__name__)
 
+app.config['FLASK_ENV'] = 'development'
+
 
 @app.route('/')
 def hello_world():
